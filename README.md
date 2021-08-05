@@ -82,7 +82,7 @@ const createUser = userBody => {
 
 ```typescript
 const checkExistentUser = name => db.users.exists({name})
-  .then(throwIfIs(true, 'Already joined user'));
+  .then(throwIfIs(true, new Error('Already joined user')));
 
 const createUser = userBody => {
   await checkExistentUser(userBody.name);
