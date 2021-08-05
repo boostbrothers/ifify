@@ -1,4 +1,4 @@
-# if-func
+# ifify
 
 ## Motivation
 
