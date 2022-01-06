@@ -9,7 +9,7 @@
   ],
   "author": "yoonhoGo <yoonho.go@bbros.kr>",
   "license": "MIT",
-  "keywords": [],
+  "keywords": ["functional", "condition", "if", "else", "switch", "case", "default"],
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
