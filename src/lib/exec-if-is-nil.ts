@@ -2,13 +2,13 @@ import {Promisable} from '../type';
 import {execIf} from './exec-if';
 
 interface ExecuteIfIs {
-  <T>(fn: () => Promisable<T>, value: T): Promisable<T>;
-  <T>(fn: () => Promisable<T>): (value: T) => Promisable<T>;
+  <T>(fn: () => Promisable<T>, value: T | null): Promisable<T>;
+  <T>(fn: () => Promisable<T>): (value: T | null) => Promisable<T>;
 }
 
 export const execIfIsNil: ExecuteIfIs = <T>(
   fn: () => Promisable<T>,
-  value?: T
+  value?: T | null
 ) => {
   // eslint-disable-next-line eqeqeq
   const exec = execIf(v => v == null, fn);
