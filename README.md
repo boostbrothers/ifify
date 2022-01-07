@@ -1,5 +1,7 @@
 # ifify
 
+<a href="https://www.npmjs.com/package/ifify"><img src="https://img.shields.io/npm/v/ifify.svg?style=flat-square&colorB=51C838" alt="NPM Version"></a>
+
 ## Motivation
 
 개발을 하다보면 많은 경우 조건문을 통해서 로직을 분기하는 경우가 있습니다. 이러한 분기가 많아지고 중첩될수록 코드는 알아보기 힘들고 변수는 원하는 기대값을 유지하기 위해 부차적인 코드가 발생합니다.
