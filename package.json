@@ -1,6 +1,6 @@
 {
   "name": "ifify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "functional condition functions",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -9,7 +9,15 @@
   ],
   "author": "yoonhoGo <yoonho.go@bbros.kr>",
   "license": "MIT",
-  "keywords": ["functional", "condition", "if", "else", "switch", "case", "default"],
+  "keywords": [
+    "functional",
+    "condition",
+    "if",
+    "else",
+    "switch",
+    "case",
+    "default"
+  ],
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
