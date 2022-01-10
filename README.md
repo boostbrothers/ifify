@@ -1,6 +1,7 @@
 # ifify
 
-<a href="https://www.npmjs.com/package/ifify"><img src="https://img.shields.io/npm/v/ifify.svg?style=flat-square&colorB=51C838" alt="NPM Version"></a>
+![][version-image] [![npm-version][npm-image]][npm-url] [![Build states][build-state-image]][build-state-url] [![Release date][release-date-image]][release-url]
+[![semantic-release][semantic-image]][semantic-url] [![npm license][license-image]][license-url]
 
 ## Motivation
 
@@ -111,3 +112,21 @@ import * as _ from 'lodash/fp';
 const user: User = await db.users.findById(userId)
   .then(throwIf(_.isNil, new Error('Not Found User')));
 ```
+
+<!-- README.md 맨 하단에 추가할 부분 -->
+[version-image]: https://img.shields.io/github/package-json/v/boostbrothers/ifify
+
+[npm-image]: https://img.shields.io/npm/v/@bbros/ifify.svg
+[npm-url]: https://www.npmjs.com/package/@bbros/ifify
+
+[build-state-image]: https://github.com/boostbrothers/ifify/workflows/Release/badge.svg
+[build-state-url]: https://github.com/boostbrothers/ifify/actions/workflows/release.yml
+
+[release-date-image]: https://img.shields.io/github/release-date/boostbrothers/ifify
+[release-url]: https://github.com/boostbrothers/ifify/releases
+
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
+
+[license-image]: https://img.shields.io/npm/l/@bbros/ifify.svg
+[license-url]: https://github.com/boostbrothers/ifify/blob/master/LICENSE
