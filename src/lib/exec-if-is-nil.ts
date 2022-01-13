@@ -2,8 +2,8 @@ import {Promisable} from '../type';
 import {execIf} from './exec-if';
 
 interface ExecuteIfIs {
-  <T>(fn: () => Promisable<T>, value: T | null): Promisable<T>;
-  <T>(fn: () => Promisable<T>): (value: T | null) => Promisable<T>;
+  <T>(fn: () => Promisable<T>, value?: T | null): Promisable<T>;
+  <T>(fn: () => Promisable<T>): (value?: T | null) => Promisable<T>;
 }
 
 export const execIfIsNil: ExecuteIfIs = <T>(
