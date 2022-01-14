@@ -5,7 +5,7 @@ name: Release
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master, next, next-major, alpha, beta, '*.*.*' ]
+    branches: [master, next, next-major, alpha, beta, '*.*.*']
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,8 +36,5 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           extra_plugins: |
-            @semantic-release/release-notes-generator
             @semantic-release/changelog
             @semantic-release/git
-            @semantic-release/npm
-            @semantic-release/github

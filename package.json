@@ -1,12 +1,22 @@
 {
   "name": "@bbros/ifify",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "functional condition functions",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
     "build/src"
   ],
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
   "author": "yoonhoGo <yoonho.go@bbros.kr>",
   "license": "MIT",
   "keywords": [
