@@ -1,4 +1,4 @@
-import {Promisable} from '../../type';
+import {Promisable} from '../type';
 
 export default <T>(fn: () => Promisable<T>) =>
   (value: T | null | undefined) => {

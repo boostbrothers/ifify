@@ -1,4 +1,4 @@
-import {Predicate, Returns} from '../../type';
+import {Predicate, Returns} from '../type';
 
 export default <T>(predicate: Predicate<T>, err: Error): Returns<T> =>
   (value: T): T => {
