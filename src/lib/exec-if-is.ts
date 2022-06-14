@@ -1,21 +1,6 @@
 import {Promisable} from '../type';
-import {execIf} from './exec-if';
+import execIfIs from './fp/exec-if-is';
 
-interface ExecuteIfIs {
-  <T>(other: unknown, fn: () => Promisable<T>, value: T): Promisable<T>;
-  <T>(other: unknown, fn: () => Promisable<T>): (value: T) => Promisable<T>;
-}
-
-export const execIfIs: ExecuteIfIs = <T>(
-  other: unknown,
-  fn: () => Promisable<T>,
-  value?: T
-) => {
-  const exec = execIf(v => v === other, fn);
-
-  if (value) {
-    return exec(value);
-  }
-
-  return exec;
+export default <T>(other: unknown, fn: (v: T) => Promisable<T>, value: T) => {
+  return execIfIs(other, fn)(value);
 };
