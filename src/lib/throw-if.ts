@@ -1,24 +1,6 @@
-interface ThrowIf {
-  <T>(predicate: (v: T) => boolean, err: Error, value: T): T;
-  <T>(predicate: (v: T) => boolean, err: Error): (value: T) => T;
-}
+import {Predicate} from '../type';
+import throwIf from './fp/throw-if';
 
-export const throwIf: ThrowIf = <T>(
-  predicate: (v: T) => boolean,
-  err: Error,
-  value?: T
-) => {
-  const exec = (value: T): T => {
-    if (predicate(value)) {
-      throw err;
-    }
-
-    return value;
-  };
-
-  if (value) {
-    return exec(value);
-  }
-
-  return exec;
+export default <T>(predicate: Predicate<T>, err: Error, value: T): T => {
+  return throwIf(predicate, err)(value);
 };

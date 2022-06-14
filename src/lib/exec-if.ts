@@ -1,32 +1,10 @@
-import {Promisable} from '../type';
+import {Predicate, Promisable} from '../type';
+import execIf from './fp/exec-if';
 
-interface ExecuteIf {
-  <T>(
-    predicate: (v: T) => boolean,
-    fn: () => Promisable<T>,
-    value: T
-  ): Promisable<T>;
-  <T>(predicate: (v: T) => boolean, fn: () => Promisable<T>): (
-    value: T
-  ) => Promisable<T>;
-}
-
-export const execIf: ExecuteIf = <T>(
-  predicate: (v: T) => boolean,
-  fn: () => Promisable<T>,
-  value?: T
+export default <T>(
+  predicate: Predicate<T>,
+  fn: (v: T) => Promisable<T>,
+  value: T
 ) => {
-  const exec = (value: T) => {
-    if (predicate(value)) {
-      return fn();
-    }
-
-    return value;
-  };
-
-  if (value) {
-    return exec(value);
-  }
-
-  return exec;
+  return execIf(predicate, fn)(value);
 };
