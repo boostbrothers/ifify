@@ -1,9 +1,4 @@
-import {throwIf} from './throw-if';
-
-interface ThrowIfIs {
-  <T>(other: unknown, err: Error, value: T): T;
-  <T>(other: unknown, err: Error): (value: T) => T;
-}
+import throwIfIs from './fp/throw-if-is';
 
 /**
  *
@@ -11,16 +6,6 @@ interface ThrowIfIs {
  * @param err Error message
  * @param value The value to compare.
  */
-export const throwIfIs: ThrowIfIs = <T>(
-  other: unknown,
-  err: Error,
-  value?: T
-) => {
-  const exec = throwIf<T>(v => v === other, err);
-
-  if (value) {
-    return exec(value);
-  }
-
-  return exec;
+export default <T>(other: unknown, err: Error, value: T) => {
+  return throwIfIs<T>(other, err)(value);
 };
