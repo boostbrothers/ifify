@@ -1,4 +1,4 @@
-import {ClassType} from '../type';
+import {ClassType} from './type';
 import throwIfIsInstanceOf from './fp/throw-if-is-instanceof';
 
 /**

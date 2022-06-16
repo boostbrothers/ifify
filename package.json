@@ -2,10 +2,10 @@
   "name": "@bbros/ifify",
   "version": "1.0.0-alpha.1",
   "description": "functional condition functions",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
-    "build/src"
+    "build"
   ],
   "release": {
     "plugins": [
