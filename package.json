@@ -2,17 +2,19 @@
   "name": "@bbros/ifify",
   "version": "1.0.0-beta.1",
   "description": "functional condition functions",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
-  "files": [
-    "build/src"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@semantic-release/npm",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "./build"
+        }
+      ],
       "@semantic-release/github",
       "@semantic-release/git"
     ]

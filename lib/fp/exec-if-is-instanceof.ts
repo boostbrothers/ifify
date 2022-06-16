@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {ClassType, Promisable} from '../../type';
+import {ClassType, Promisable} from '../type';
 import execIf from './exec-if';
 
 export default <T>(

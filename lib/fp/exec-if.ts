@@ -1,4 +1,4 @@
-import {Predicate, Promisable} from '../../type';
+import {Predicate, Promisable} from '../type';
 
 export default <T>(predicate: Predicate<T>, fn: (v: T) => Promisable<T>) =>
   (value: T) => {
