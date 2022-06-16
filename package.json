@@ -2,11 +2,8 @@
   "name": "@bbros/ifify",
   "version": "1.0.0-alpha.2",
   "description": "functional condition functions",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "files": [
-    "build"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
