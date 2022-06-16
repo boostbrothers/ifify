@@ -1,4 +1,4 @@
-import {ClassType} from '../../type';
+import {ClassType} from '../type';
 
 export default <T>(typeOfClass: ClassType, err: Error) =>
   (instance: T): T => {

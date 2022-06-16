@@ -1,4 +1,4 @@
-import {Predicate, Promisable} from '../type';
+import {Predicate, Promisable} from './type';
 import execIf from './fp/exec-if';
 
 export default <T>(
