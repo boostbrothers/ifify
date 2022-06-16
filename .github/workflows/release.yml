@@ -28,6 +28,7 @@ jobs:
         run: npm ci
       - name: Typescript Compile
         run: npm run compile
+      - run: cp package.json build/package.json
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         env:
