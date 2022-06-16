@@ -130,3 +130,8 @@ const user: User = await db.users.findById(userId)
 
 [license-image]: https://img.shields.io/npm/l/@bbros/ifify.svg
 [license-url]: https://github.com/boostbrothers/ifify/blob/master/LICENSE
+
+# To-Do
+
+- [x] instanceOf predicate
+- [ ] call functions
