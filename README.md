@@ -9,6 +9,27 @@
 
 **ifify**는 이러한 분기를 최소화하고 변수 타입의 일관성과 좀 더 이해하기 쉽고 가독성이 향상된 코드를 지향하고자 작성되었습니다.
 
+## Usage
+
+### Full arguments function call
+
+```typescript
+import {throwIfIsNil} from '@bbros/ifify';
+
+throwIfIsNil(new Error('It is nil'), Something);
+```
+
+### Curried last argument function call
+
+!`v1.0.0`에서 해당 함수의 사용 방법이 변경되었습니다.
+
+```typescript
+import {throwIfIsNil} from '@bbros/ifify/fp';
+
+Promise.resolve(Something)
+  .then(throwIfIsNil(new Error('It is nil')))
+```
+
 ## Example
 
 ### Type-guard
