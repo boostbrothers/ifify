@@ -1,3 +1,18 @@
+# [1.1.0-alpha.1](https://github.com/boostbrothers/ifify/compare/v1.0.0...v1.1.0-alpha.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* package path ([80d1c44](https://github.com/boostbrothers/ifify/commit/80d1c44f1ee00d28aba8ecbd5fb1a8ba86444c47))
+* package.json을 build 경로로 복사 ([bfdb89e](https://github.com/boostbrothers/ifify/commit/bfdb89ef97ea29f8d62e30a169d94375f8d1c07a))
+* publish package path ([63a82ed](https://github.com/boostbrothers/ifify/commit/63a82ed3dd9f2af23159b13afe6df277b302d7b3))
+* semantic release publish pkgRoot path ([9767cc9](https://github.com/boostbrothers/ifify/commit/9767cc9950eda301433109258d8c12573e7cfabd))
+
+
+### Features
+
+* some function ([a3a1ba9](https://github.com/boostbrothers/ifify/commit/a3a1ba9c8429d21c0376509a2b86d40fea2b0848))
+
 # [1.0.0-alpha.3](https://github.com/boostbrothers/ifify/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2022-06-16)
 
 
