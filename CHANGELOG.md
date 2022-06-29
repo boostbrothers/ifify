@@ -1,3 +1,10 @@
+# [1.1.0-alpha.2](https://github.com/boostbrothers/ifify/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* rename and replace throw to return ([61d61da](https://github.com/boostbrothers/ifify/commit/61d61da3fb647893e473abaafe0242141c864f4b))
+
 # [1.1.0-alpha.1](https://github.com/boostbrothers/ifify/compare/v1.0.0...v1.1.0-alpha.1) (2022-06-29)
 
 
