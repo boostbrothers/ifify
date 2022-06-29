@@ -3,6 +3,7 @@ export {default as execIfIsInstanceOf} from './exec-if-is-instanceof';
 export {default as execIfIsNil} from './exec-if-is-nil';
 export {default as execIfIs} from './exec-if-is';
 export {default as execIf} from './exec-if';
+export {default as findSome} from './find-some';
 export {default as throwIfExists} from './throw-if-exists';
 export {default as throwIfIsInstanceOf} from './throw-if-is-instanceof';
 export {default as throwIfIsNil} from './throw-if-is-nil';
