@@ -1,3 +1,10 @@
+# [1.1.0-alpha.3](https://github.com/boostbrothers/ifify/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2022-08-03)
+
+
+### Bug Fixes
+
+* republish ([f115f53](https://github.com/boostbrothers/ifify/commit/f115f53f2ba4c220b4025e0966dafd3c34ffcd81))
+
 # [1.1.0-alpha.2](https://github.com/boostbrothers/ifify/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2022-06-29)
 
 
