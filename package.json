@@ -49,5 +49,6 @@
   "bugs": {
     "url": "https://github.com/boostbrothers/ifify/issues"
   },
-  "homepage": "https://github.com/boostbrothers/ifify#readme"
+  "homepage": "https://github.com/boostbrothers/ifify#readme",
+  "dependencies": {}
 }
