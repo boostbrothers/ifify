@@ -9,3 +9,4 @@ export {default as throwIfIsInstanceOf} from './throw-if-is-instanceof';
 export {default as throwIfIsNil} from './throw-if-is-nil';
 export {default as throwIfIs} from './throw-if-is';
 export {default as throwIf} from './throw-if';
+export * from './go';
